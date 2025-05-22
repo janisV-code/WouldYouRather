@@ -1,3 +1,3 @@
 # Virsraksts
 
-Šis projekts ir demo.
+https://janisv-code.github.io/WouldYouRather/
