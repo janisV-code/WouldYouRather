@@ -1,0 +1,37 @@
+<!--TODO: šeit būs programmas saskarne -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Šis vai tas?</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="kaste">
+      <h1>Šis vai tas?</h1>
+      <!--Temata izvele-->
+      <div id="temataIzvelesAile">
+        <input
+          type="text"
+          id="temataIzvele"
+          placeholder="Ievadi tēmu jautājumam"
+        />
+        <button onclick="jautajumaUzdosana()">Sākt spēli</button>
+      </div>
+      <!--Jautājums-->
+      <div id="jautajums" class="hidden">
+        <p id="jautajumaTeksts"></p>
+        <div id="atbildes">
+          <button id="izveleA" onclick="selectChoice('A')"></button>
+          <button id="izveleB" onclick="selectChoice('B')"></button>
+        </div>
+        <div class="Pogas">
+          <button onclick="nakamaisJautajums()">Nākamais jautājums</button>
+          <button onclick="mainitTemu()">Mainīt tematu</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
